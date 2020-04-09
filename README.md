@@ -1,2 +1,27 @@
-# Disaster-Response-Pipeline
-In this project, you'll apply these skills to analyze disaster data from Figure Eight to build a model for an API that classifies disaster messages.  In the Project Workspace, you'll find a data set containing real messages that were sent during disaster events. You will be creating a machine learning pipeline to categorize these events so that you can send the messages to an appropriate disaster relief agency.  Your project will include a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data. This project will show off your software skills, including your ability to create basic data pipelines and write clean, organized code!
+# Disaster Response Pipeline Project
+
+## Disaster Response Pipeline
+This project was completed as part of the course requirements of Udacity's Data Scientist Nanodegree certification.
+
+## Overview
+The project used a data set from Figure Eight that contained labeled disaster messages received by an aid organization. A multi-output Random Forrest classifier was trained using supervised learning with a natural language processing (NLP).
+
+An ETL pipeline was created, extracting data from csv files, cleaning and loading into an SQL database. A machine learning pipeline was created to extract the NLP features and then optimize the algorithm using grid search. A web app was then developed that extracts the initial data from the database and provides some interactive visual summaries. Users are also able to enter their own message to be classified by the algorithm.
+
+## Technologies Used
+Python
+Libraries: pandas, sklearn, sqlite3, sqlalchemy, nltk, plotly, flask
+HTML
+Bootstrap
+Project Details
+Web App
+Users have the ability to enter their own message to be classified.
+
+'Enter Message'
+
+They will then be shown the classification results.
+
+'Example Classification'
+
+They can also see a summary of the original dataset. 'Message Types' 'Related Types' 'Message Correlation'
+
